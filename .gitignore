@@ -1,0 +1,14 @@
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+/exo1.txt
+/src/Controller/PanierController.php
+/src/Controller/TestController.php
+/src/DataFixtures
+###< symfony/framework-bundle ###

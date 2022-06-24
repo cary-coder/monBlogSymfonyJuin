@@ -1,0 +1,11 @@
+<h1>Salut c'est {{prenom ~ ' '~ nom}}, je suis dans la page test</h1>
+{# on écrit une variable en twig entre {{ maVariable }} et on utilise le ~ pour
+concatener #}
+
+<h3>Liste de personnes</h3>
+
+<ul>
+  {% for personne in identite %}
+  <li>{{personne.nom~' '~personne.prenom}}</li>
+  {% endfor %}
+</ul>

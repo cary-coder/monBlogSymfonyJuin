@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ parent() }} -article {%
+endblock %} 
+
+
+{% block content %} 
+
+<div class="row mt-5 justify-content-left text-left">
+    <h3>{{article.titre}}</h3>
+    <h6>publié le {{article.DateDeCreation| date("d/m/Y \à H\\hi")}}</h6>
+    {% if article.dateDeModification is not null %}
+ <h6 class="text-muted">dernière modification le: {{article.DateDeModification| date("d/m/Y \à H\hi")}}</h6>
+    <h6>auteur de l'article</h6>
+    {% endif %}
+    <p>{{article.contenu }}</p>
+
+</div>
+
+ {% endblock content %}

@@ -1,0 +1,13 @@
+{% extends 'layout.html.twig' %}
+{% block title %} {{ parent() }} -auteur {%
+endblock %} 
+
+
+{% block content %}
+<div class="row mt-5 justify-content-left text-left">
+    <h3>Auteur: {{ auteur.prenom ~' '~ auteur.nom }}</h3>
+    <h5>Date de naissance: {{ auteur.dateDeNaissance | date("d/m/Y") }}</h5>
+    <h4>Biographie</h4>
+    <p>{{auteur.biographie }}</p>
+
+{% endblock content %}

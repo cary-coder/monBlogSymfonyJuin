@@ -1,0 +1,10 @@
+<h3>Panier</h3>
+<ul>
+  {%for produit in panier%}
+  <li>{{ produit.id }}</li>
+  <li>{{ produit.titre }}</li>
+  <li>{{ produit.description }}</li>
+  <li>{{ produit.prix }}</li>
+  <br />
+  {% endfor %}
+</ul>
